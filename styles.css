@@ -211,6 +211,26 @@ footer h2{ font-size:36px; font-weight:600; max-width:14ch; }
 }
 .problem-item p{ margin:0; padding-top:5px; }
 
+.finding-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:28px; margin:28px 0 40px; align-items:start; }
+.finding-item{ position:relative; }
+.finding-badge{
+  position:absolute; top:-14px; left:-14px; width:34px; height:34px; border-radius:50%;
+  background:var(--ink); color:var(--white); font-family:'Space Grotesk', sans-serif;
+  font-weight:600; font-size:15px; display:flex; align-items:center; justify-content:center;
+  z-index:2; box-shadow:0 3px 8px rgba(22,22,28,0.25);
+}
+.finding-frame{
+  height:320px; display:flex; align-items:center; justify-content:center;
+  border:1px solid var(--line); border-radius:4px; background:var(--white); overflow:hidden;
+}
+.finding-frame img{ max-width:100%; max-height:100%; object-fit:contain; cursor:pointer; display:block; }
+.finding-frame.finding-pair{ flex-direction:column; align-items:stretch; justify-content:flex-start; overflow-y:auto; }
+.finding-frame.finding-pair img{ max-height:none; width:100%; margin-bottom:-1px; }
+.finding-item img{ display:block; }
+.finding-caption{
+  font-style:italic; color:#C0367A; font-size:14px; margin-top:12px; line-height:1.5;
+}
+
 .prompt-callout{
   font-family:'Space Grotesk', sans-serif; font-size:25px; font-weight:400; line-height:1.45;
   color:var(--ink); border-left:2px solid var(--accent); padding:4px 0 4px 28px; margin:40px 0; max-width:54ch;
@@ -331,6 +351,7 @@ footer h2{ font-size:36px; font-weight:600; max-width:14ch; }
   .wrap{ padding:0 20px; }
   .cs-hero h1{ font-size:30px; }
   .gallery, .gallery.triple{ grid-template-columns:1fr; }
+  .finding-grid{ grid-template-columns:1fr; }
   .method-grid{ grid-template-columns:1fr; }
   .prompt-callout{ font-size:20px; padding:24px; }
   .cs-meta{ gap:28px; }
