@@ -307,7 +307,7 @@ footer h2{ font-size:36px; font-weight:600; max-width:14ch; }
 .method-card{ background:var(--white); padding:26px; border:1px solid var(--line); border-top:3px solid #3B6EA8; border-radius:6px; }
 .method-card:nth-child(4n+1), .method-card:nth-child(4n){ background:#F1F6FB; border-color:#D8E5F0; border-top-color:#3B6EA8; }
 .method-card img{
-  width:100%; height:150px; object-fit:cover; border-radius:4px; margin-bottom:16px;
+  width:100%; height:150px; object-fit:cover; object-position:top; border-radius:4px; margin-bottom:16px;
   border:1px solid var(--line); cursor:pointer; transition:opacity .2s ease;
 }
 .method-card img:hover{ opacity:0.85; }
