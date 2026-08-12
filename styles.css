@@ -333,28 +333,29 @@ footer h2{ font-size:36px; font-weight:600; max-width:14ch; }
 .cs-nav-footer a{ font-size:14px; font-weight:500; border-bottom:1px solid var(--ink); padding-bottom:2px; }
 .cs-nav-footer a:hover{ color:var(--accent); border-color:var(--accent); }
 
-.testimonials{ padding:110px 0; background:#0B0B0D; position:relative; overflow:hidden; }
+.testimonials{ padding:64px 0 110px; background:var(--accent-tint); position:relative; overflow:hidden; }
 .testimonials-head{ margin-bottom:48px; padding:0 90px; }
 .testimonials-head h2{
   font-family:'Playfair Display', serif; font-style:italic; font-weight:700;
-  font-size:72px; color:var(--white); letter-spacing:-0.01em; line-height:1.1;
+  font-size:72px; color:var(--ink); letter-spacing:-0.01em; line-height:1.1;
 }
 .testimonial-slide{ display:none; max-width:760px; padding:0 90px; }
 .testimonial-slide.active{ display:block; }
 .testimonial-quote{
   font-family:'Inter', sans-serif; font-size:22px; font-weight:400; line-height:1.65;
-  color:rgba(255,255,255,0.72); margin-bottom:36px; text-align:left;
+  color:var(--ink-soft); margin-bottom:36px; text-align:left;
 }
 .testimonial-name{ font-size:16px; font-weight:600; }
-.testimonial-name a{ color:var(--white); text-decoration:underline; text-underline-offset:3px; }
-.testimonial-title{ font-size:14px; font-style:italic; color:rgba(255,255,255,0.55); margin-top:2px; }
+.testimonial-name a{ color:var(--ink); text-decoration:underline; text-underline-offset:3px; }
+.testimonial-name a:hover{ color:var(--accent); }
+.testimonial-title{ font-size:14px; font-style:italic; color:var(--ink-soft); margin-top:2px; }
 .testimonial-arrow{
   position:absolute; top:50%; transform:translateY(-50%);
   border:none; background:transparent; box-shadow:none;
-  color:rgba(255,255,255,0.55); font-size:32px; line-height:1; cursor:pointer;
+  color:var(--ink-soft); font-size:32px; line-height:1; cursor:pointer;
   padding:8px; transition:color .2s ease; z-index:2;
 }
-.testimonial-arrow:hover{ color:var(--white); }
+.testimonial-arrow:hover{ color:var(--ink); }
 .testimonial-arrow.prev{ left:20px; }
 .testimonial-arrow.next{ right:20px; }
 
@@ -382,7 +383,7 @@ footer h2{ font-size:36px; font-weight:600; max-width:14ch; }
   .method-grid{ grid-template-columns:1fr; }
   .prompt-callout{ font-size:20px; padding:24px; }
   .cs-meta{ gap:28px; }
-  .testimonials{ padding:72px 0; }
+  .testimonials{ padding:40px 0 72px; }
   .testimonials-head{ padding:0 50px; }
   .testimonials-head h2{ font-size:34px; }
   .testimonial-slide{ padding:0 50px; }
