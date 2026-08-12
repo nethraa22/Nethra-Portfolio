@@ -334,20 +334,16 @@ footer h2{ font-size:36px; font-weight:600; max-width:14ch; }
 .cs-nav-footer a:hover{ color:var(--accent); border-color:var(--accent); }
 
 .testimonials{ padding:110px 0; background:#0B0B0D; position:relative; overflow:hidden; }
-.testimonials-head{ margin-bottom:48px; }
+.testimonials-head{ margin-bottom:48px; padding:0 90px; }
 .testimonials-head h2{
   font-family:'Playfair Display', serif; font-style:italic; font-weight:700;
   font-size:72px; color:var(--white); letter-spacing:-0.01em; line-height:1.1;
 }
-.testimonial-slide{ display:none; max-width:960px; }
+.testimonial-slide{ display:none; max-width:760px; padding:0 90px; }
 .testimonial-slide.active{ display:block; }
-.testimonial-quote-mark{
-  font-family:'Playfair Display', serif; font-size:110px; color:rgba(255,255,255,0.18);
-  line-height:0.5; margin-bottom:8px; height:60px;
-}
 .testimonial-quote{
   font-family:'Inter', sans-serif; font-size:22px; font-weight:400; line-height:1.65;
-  color:rgba(255,255,255,0.72); margin-bottom:36px; text-align:left; max-width:900px;
+  color:rgba(255,255,255,0.72); margin-bottom:36px; text-align:left;
 }
 .testimonial-name{ font-size:16px; font-weight:600; }
 .testimonial-name a{ color:var(--white); text-decoration:underline; text-underline-offset:3px; }
@@ -355,12 +351,12 @@ footer h2{ font-size:36px; font-weight:600; max-width:14ch; }
 .testimonial-arrow{
   position:absolute; top:50%; transform:translateY(-50%);
   border:none; background:transparent; box-shadow:none;
-  color:rgba(255,255,255,0.55); font-size:44px; line-height:1; cursor:pointer;
+  color:rgba(255,255,255,0.55); font-size:32px; line-height:1; cursor:pointer;
   padding:8px; transition:color .2s ease; z-index:2;
 }
 .testimonial-arrow:hover{ color:var(--white); }
-.testimonial-arrow.prev{ left:2vw; }
-.testimonial-arrow.next{ right:2vw; }
+.testimonial-arrow.prev{ left:20px; }
+.testimonial-arrow.next{ right:20px; }
 
 /* RESPONSIVE */
 @media (max-width: 860px){
@@ -387,8 +383,11 @@ footer h2{ font-size:36px; font-weight:600; max-width:14ch; }
   .prompt-callout{ font-size:20px; padding:24px; }
   .cs-meta{ gap:28px; }
   .testimonials{ padding:72px 0; }
+  .testimonials-head{ padding:0 50px; }
   .testimonials-head h2{ font-size:34px; }
+  .testimonial-slide{ padding:0 50px; }
   .testimonial-quote{ font-size:17px; }
-  .testimonial-quote-mark{ font-size:70px; }
-  .testimonial-arrow{ display:none; }
+  .testimonial-arrow{ font-size:24px; }
+  .testimonial-arrow.prev{ left:6px; }
+  .testimonial-arrow.next{ right:6px; }
 }
