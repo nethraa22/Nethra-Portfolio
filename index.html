@@ -47,6 +47,38 @@
 
 </main>
 
+<section class="testimonials">
+  <div class="wrap">
+    <div class="testimonials-head">
+      <span class="eyebrow">What people have to say</span>
+    </div>
+
+    <div class="testimonial-slide active">
+      <p class="testimonial-quote">I had the distinct pleasure of partnering with Nethra during their tenure as a Pitch Hub Services Organizer, where we collaborated on multiple high-profile engagements for a $4B medical device and healthcare enterprise. Nethra is a highly capable, driven professional who brings clarity and execution to complex projects. Any organization would be incredibly fortunate to have them on their team!</p>
+      <div class="testimonial-name"><a href="https://www.linkedin.com/in/kylemurley/" target="_blank" rel="noopener">Kyle Murley</a></div>
+      <div class="testimonial-title">Principal Architect</div>
+    </div>
+
+    <div class="testimonial-slide">
+      <p class="testimonial-quote">Nethra is a great asset to any team: contributing through accurate and timely feedback, as well as a rigorous commitment to deadlines. Combined with her expertise, this makes Nethra a proficient and welcome contributor to any project.</p>
+      <div class="testimonial-name"><a href="https://www.linkedin.com/in/benjiewilhelm/" target="_blank" rel="noopener">benjie wilhelm, MDes</a></div>
+      <div class="testimonial-title">Executive Brand Strategist | Design Educator</div>
+    </div>
+
+    <div class="testimonial-slide">
+      <p class="testimonial-quote">I would recommend Nethra for any position she wishes to acquire. I find her to be thorough, prompt and skilled. She is trusted to evaluate student assignments and offer constructive feedback. I feel Nethra would be an asset to any organization lucky enough to obtain her.</p>
+      <div class="testimonial-name"><a href="https://www.linkedin.com/in/phil-clark-335b73189/" target="_blank" rel="noopener">Phil Clark</a></div>
+      <div class="testimonial-title">Teaching Assistant at Arizona State University</div>
+    </div>
+
+    <div class="testimonial-dots">
+      <button class="testimonial-dot active" data-index="0" aria-label="Testimonial 1"></button>
+      <button class="testimonial-dot" data-index="1" aria-label="Testimonial 2"></button>
+      <button class="testimonial-dot" data-index="2" aria-label="Testimonial 3"></button>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="wrap">
     <div class="footer-top">
@@ -63,5 +95,20 @@
 </footer>
 
 <script src="script.js"></script>
+<script>
+  (function(){
+    const slides = document.querySelectorAll('.testimonial-slide');
+    const dots = document.querySelectorAll('.testimonial-dot');
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        const i = parseInt(dot.getAttribute('data-index'));
+        slides.forEach(s => s.classList.remove('active'));
+        dots.forEach(d => d.classList.remove('active'));
+        slides[i].classList.add('active');
+        dot.classList.add('active');
+      });
+    });
+  })();
+</script>
 </body>
 </html>

@@ -264,6 +264,8 @@ footer h2{ font-size:36px; font-weight:600; max-width:14ch; }
 
 .band-snack{ background:#FBEBDC; border-top:3px solid #C9762E !important; border-bottom:3px solid #C9762E; }
 .band-snack h2{ color:#A15C1F; }
+.band-teal{ background:#DFF2F0; border-top:3px solid #1C7A72 !important; border-bottom:3px solid #1C7A72; }
+.band-teal h2{ color:#155F58; }
 
 .carousel-3d{ position:relative; margin:28px 0 48px; overflow:hidden; border-radius:8px; }
 .carousel-track{
@@ -331,6 +333,31 @@ footer h2{ font-size:36px; font-weight:600; max-width:14ch; }
 .cs-nav-footer a{ font-size:14px; font-weight:500; border-bottom:1px solid var(--ink); padding-bottom:2px; }
 .cs-nav-footer a:hover{ color:var(--accent); border-color:var(--accent); }
 
+.testimonials{ padding:96px 0; border-top:1px solid var(--line); }
+.testimonials-head{ text-align:center; margin-bottom:56px; }
+.testimonials-head h2{ font-size:32px; font-weight:500; }
+.testimonial-slide{
+  max-width:680px; margin:0 auto; text-align:center; display:none;
+}
+.testimonial-slide.active{ display:block; }
+.testimonial-quote{
+  font-family:'Space Grotesk', sans-serif; font-size:22px; font-weight:400; line-height:1.55;
+  color:var(--ink); margin-bottom:32px;
+}
+.testimonial-quote::before{ content:'\201C'; }
+.testimonial-quote::after{ content:'\201D'; }
+.testimonial-name{
+  font-family:'Space Grotesk', sans-serif; font-size:16px; font-weight:600;
+}
+.testimonial-name a{ color:var(--accent); }
+.testimonial-title{ font-size:14px; color:var(--ink-soft); margin-top:2px; }
+.testimonial-dots{ display:flex; justify-content:center; gap:10px; margin-top:40px; }
+.testimonial-dot{
+  width:9px; height:9px; border-radius:50%; background:var(--line); border:none;
+  cursor:pointer; padding:0; transition:background .2s ease;
+}
+.testimonial-dot.active{ background:var(--ink); }
+
 /* RESPONSIVE */
 @media (max-width: 860px){
   .nav-links{ display:none; }
@@ -355,4 +382,5 @@ footer h2{ font-size:36px; font-weight:600; max-width:14ch; }
   .method-grid{ grid-template-columns:1fr; }
   .prompt-callout{ font-size:20px; padding:24px; }
   .cs-meta{ gap:28px; }
+  .testimonial-quote{ font-size:18px; }
 }
