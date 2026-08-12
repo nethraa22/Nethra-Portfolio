@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Holter Link — Nethra Alluri</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-name">Nethra Alluri</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="work.html" class="active">My Works</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+<div class="wrap">
+  <div class="cs-hero">
+    <span class="eyebrow">Healthcare · UI/UX · Icarus Nova</span>
+    <h1>Holter Link</h1>
+    <p class="lede">A patient biosensor management tool for clinical staff — tracking cardiac and glucose monitoring devices from assignment through data retrieval.</p>
+    <div class="cs-meta">
+      <div><div class="meta-label">Contribution</div>UI/UX Design, Component System</div>
+      <div><div class="meta-label">Users</div>Nurses &amp; Clinicians</div>
+      <div><div class="meta-label">Company</div>Icarus Nova</div>
+    </div>
+  </div>
+</div>
+
+<section class="section prose section-band band-teal" style="border-top:none;">
+<div class="wrap">
+    <h2>Introduction</h2>
+    <p>Clinics distribute biosensors to patients to track health data over time — cardiac monitoring through Holter devices, and glucose monitoring for other patients. Each biosensor connects back to a central system, and clinical staff need a reliable way to see every device's status, retrieve the data it's collected, and keep it tied to the right patient record.</p>
+    <p>Holter Link is the internal tool built for exactly that — letting nurses manage a full queue of biosensors, prioritize urgent retrievals, catch failures early, and keep patient information organized in one place.</p>
+</div>
+</section>
+
+<section class="section" style="padding-top:64px;">
+<div class="wrap">
+    <h2>Core features</h2>
+    <div class="method-grid">
+
+      <div class="method-card">
+        <img src="images/icarus-nova/01-queue-dashboard.png" alt="Queue dashboard">
+        <span class="m-label">Queue management</span>
+        <h4>Live retrieval tracking</h4>
+        <p>Nurses see every biosensor's status at a glance — retrieving, waiting, or flagged — with a live countdown and drag-to-reprioritize for urgent cases.</p>
+      </div>
+
+      <div class="method-card">
+        <img src="images/icarus-nova/02-add-biosensor.png" alt="Add biosensor flow">
+        <span class="m-label">Add biosensor</span>
+        <h4>Manual entry or scan</h4>
+        <p>New devices can be added by typing an ID directly or scanning a QR code / barcode, keeping onboarding fast during a busy shift.</p>
+      </div>
+
+      <div class="method-card">
+        <img src="images/icarus-nova/05-patient-record.png" alt="Patient record view">
+        <span class="m-label">Patient record</span>
+        <h4>Everything in one view</h4>
+        <p>Each biosensor links to a full patient record — vitals, doctor, facility, test duration, and retrieval status — with a Holter Diary for attaching notes or images.</p>
+      </div>
+
+      <div class="method-card">
+        <img src="images/icarus-nova/09-query-search.png" alt="Query search screen">
+        <span class="m-label">Query search</span>
+        <h4>Find any patient fast</h4>
+        <p>Staff can look up a specific patient by Biosensor ID or MRN directly, without scrolling through the full queue.</p>
+      </div>
+
+    </div>
+</div>
+</section>
+
+<section class="section prose section-band band-teal">
+<div class="wrap">
+    <h2>Handling failure states</h2>
+    <p>A tool like this only works if staff can trust it when something goes wrong. Every failure state was designed to be caught immediately and explained clearly — not buried in a queue.</p>
+
+    <div class="gallery">
+      <img src="images/icarus-nova/03-add-biosensor-error-duplicate.png" alt="Error: biosensor already added">
+      <img src="images/icarus-nova/04-add-biosensor-error-max.png" alt="Error: maximum biosensors in queue">
+    </div>
+    <p style="font-size:14px; color:var(--ink-soft); margin-top:-16px;">Adding a biosensor that's already in the queue, or exceeding the 100-device limit, surfaces a clear inline error instead of failing silently.</p>
+
+    <div class="gallery single" style="margin-top:36px;">
+      <img src="images/icarus-nova/07-holter-diary-error-toast.png" alt="Retrieval error toast on patient record">
+    </div>
+    <p style="font-size:14px; color:var(--ink-soft); margin-top:-16px;">On the Queue dashboard, devices that fail — battery discharged, retrieval unsuccessful — are flagged under "Action Required" so nothing gets missed.</p>
+</div>
+</section>
+
+<section class="section" style="padding-top:64px;">
+<div class="wrap">
+    <h2>Editing patient info &amp; history</h2>
+    <div class="flow-row">
+      <div class="flow-item">
+        <div class="flow-label">Edit Patient Info</div>
+        <img src="images/icarus-nova/06-edit-patient-info.png" alt="Edit patient information form">
+      </div>
+      <div class="flow-item">
+        <div class="flow-label">History Log</div>
+        <img src="images/icarus-nova/08-history-log.png" alt="History log of past transfers">
+      </div>
+    </div>
+</div>
+</section>
+
+<section class="section prose section-band band-teal">
+<div class="wrap">
+    <h2>Outcome</h2>
+    <p>Holter Link launched across web and mobile and was used by 50+ providers, cutting data-retrieval time by 30% through clearer dashboards and workflows. I ran usability testing with 20+ clinicians, applying accessibility and responsive design improvements that boosted engagement by 20%.</p>
+    <p>I also built 25+ reusable UI components and an accessible design system in Figma and Adobe XD, which streamlined developer handoff and kept the interface consistent across web, iOS, and Android.</p>
+</div>
+</section>
+
+<div class="wrap">
+  <div class="cs-nav-footer">
+    <a href="work.html">← All works</a>
+    <a href="synthesia-video.html">Synthesia Video →</a>
+  </div>
+</div>
+
+</main>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+  <img id="lightbox-img" src="" alt="Full view">
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <h2>Let's build something intuitive together.</h2>
+      <div class="footer-links">
+        <a href="mailto:alluri.nethra22@gmail.com">alluri.nethra22@gmail.com</a>
+        <a href="https://www.linkedin.com/in/nethra-alluri-b3a772188" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Nethra Alluri</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  (function(){
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    document.querySelectorAll('.method-card img, .gallery img, .flow-item img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightbox.classList.add('open');
+      });
+    });
+
+    document.getElementById('lightbox-close').addEventListener('click', () => {
+      lightbox.classList.remove('open');
+    });
+    lightbox.addEventListener('click', (e) => {
+      if(e.target === lightbox) lightbox.classList.remove('open');
+    });
+    document.addEventListener('keydown', (e) => {
+      if(e.key === 'Escape') lightbox.classList.remove('open');
+    });
+  })();
+</script>
+</body>
+</html>
