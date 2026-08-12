@@ -353,14 +353,14 @@ footer h2{ font-size:36px; font-weight:600; max-width:14ch; }
 .testimonial-name a{ color:var(--white); text-decoration:underline; text-underline-offset:3px; }
 .testimonial-title{ font-size:14px; font-style:italic; color:rgba(255,255,255,0.55); margin-top:2px; }
 .testimonial-arrow{
-  position:absolute; top:50%; transform:translateY(-50%); width:44px; height:44px;
-  border-radius:50%; border:1px solid rgba(255,255,255,0.25); background:transparent;
-  color:rgba(255,255,255,0.7); font-size:18px; cursor:pointer; display:flex;
-  align-items:center; justify-content:center; transition:all .2s ease; z-index:2;
+  position:absolute; top:50%; transform:translateY(-50%);
+  border:none; background:transparent; box-shadow:none;
+  color:rgba(255,255,255,0.55); font-size:44px; line-height:1; cursor:pointer;
+  padding:8px; transition:color .2s ease; z-index:2;
 }
-.testimonial-arrow:hover{ border-color:var(--white); color:var(--white); }
-.testimonial-arrow.prev{ left:24px; }
-.testimonial-arrow.next{ right:24px; }
+.testimonial-arrow:hover{ color:var(--white); }
+.testimonial-arrow.prev{ left:2vw; }
+.testimonial-arrow.next{ right:2vw; }
 
 /* RESPONSIVE */
 @media (max-width: 860px){
