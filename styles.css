@@ -336,10 +336,10 @@ footer h2{ font-size:36px; font-weight:600; max-width:14ch; }
 .testimonials{ padding:110px 0; background:#0B0B0D; position:relative; overflow:hidden; }
 .testimonials-head{ margin-bottom:48px; }
 .testimonials-head h2{
-  font-family:'Playfair Display', serif; font-style:italic; font-weight:400;
-  font-size:56px; color:var(--white); letter-spacing:-0.01em;
+  font-family:'Playfair Display', serif; font-style:italic; font-weight:700;
+  font-size:72px; color:var(--white); letter-spacing:-0.01em; line-height:1.1;
 }
-.testimonial-slide{ display:none; max-width:900px; }
+.testimonial-slide{ display:none; max-width:960px; }
 .testimonial-slide.active{ display:block; }
 .testimonial-quote-mark{
   font-family:'Playfair Display', serif; font-size:110px; color:rgba(255,255,255,0.18);
