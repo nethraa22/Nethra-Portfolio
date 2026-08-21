@@ -359,6 +359,13 @@ footer h2{ font-size:36px; font-weight:600; max-width:14ch; }
 .testimonial-arrow.prev{ left:20px; }
 .testimonial-arrow.next{ right:20px; }
 
+.client-logos{ display:flex; align-items:center; gap:32px; flex-wrap:wrap; margin:20px 0 8px; }
+.client-logos img{
+  height:28px; width:auto; object-fit:contain; filter:grayscale(100%); opacity:0.65;
+  transition:all .2s ease;
+}
+.client-logos img:hover{ filter:grayscale(0%); opacity:1; }
+
 /* RESPONSIVE */
 @media (max-width: 860px){
   .nav-links{ display:none; }
