@@ -50,8 +50,8 @@
 <div class="wrap">
     <h2>How it works</h2>
     <p style="color:var(--ink-soft); max-width:68ch; margin-bottom:24px;">The full clinician flow, from assigning a biosensor to a patient through to updating the record once retrieval is complete.</p>
-    <div class="gallery single">
-      <img src="images/icarus-nova/journey-map.png" alt="Holter Link biosensor process map, showing the full clinician flow from assignment through retrieval and record update">
+    <div style="border:1px solid var(--line); border-radius:4px; overflow:hidden; background:var(--white);">
+      <img src="images/icarus-nova/journey-map.png" alt="Holter Link biosensor process map, showing the full clinician flow from assignment through retrieval and record update" class="lightbox-trigger" style="width:100%; height:auto; display:block; cursor:pointer;">
     </div>
 </div>
 </section>
@@ -170,7 +170,7 @@
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
 
-    document.querySelectorAll('.method-card img, .gallery img, .flow-item img').forEach(img => {
+    document.querySelectorAll('.method-card img, .gallery img, .flow-item img, .lightbox-trigger').forEach(img => {
       img.addEventListener('click', () => {
         lightboxImg.src = img.src;
         lightbox.classList.add('open');
